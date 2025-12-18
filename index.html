@@ -130,37 +130,29 @@
             margin: 50px 0;
         }
 
-        .phone-frame {
-            background: #1a1a1a;
-            border-radius: 50px;
-            padding: 12px;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
-            max-width: 300px;
-        }
-
-        .phone-screen {
-            background: #000;
-            border-radius: 40px;
-            overflow: hidden;
-            aspect-ratio: 9/19.5;
-        }
-
-        .phone-screen img {
+        .phone-screenshot {
+            max-width: 320px;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5));
+        }
+
+        .phone-screenshot img {
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
         }
 
         /* Screenshot placeholder - replace with actual screenshot */
         .screenshot-placeholder {
-            width: 100%;
-            height: 100%;
-            background: #c0c0c0;
+            width: 300px;
+            height: 600px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 14px;
-            color: #666;
+            font-size: 20px;
+            color: rgba(255,255,255,0.5);
         }
 
         /* Features */
@@ -360,10 +352,8 @@
         </section>
 
         <section class="phone-container">
-            <div class="phone-frame">
-                <div class="phone-screen">
-                    <img src="screenshot.png" alt="AmbientWave app screenshot" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=screenshot-placeholder>Add screenshot.png</div>';">
-                </div>
+            <div class="phone-screenshot">
+                <img src="screenshot.png" alt="AmbientWave app screenshot" onerror="this.parentElement.innerHTML='<div class=screenshot-placeholder>Add screenshot.png</div>';">
             </div>
         </section>
 
