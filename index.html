@@ -127,11 +127,13 @@
         .phone-container {
             display: flex;
             justify-content: center;
+            gap: 24px;
             margin: 20px 0 50px;
+            flex-wrap: wrap;
         }
 
         .phone-screenshot {
-            max-width: 320px;
+            max-width: 280px;
             width: 100%;
             filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5));
         }
@@ -144,8 +146,8 @@
 
         /* Screenshot placeholder - replace with actual screenshot */
         .screenshot-placeholder {
-            width: 300px;
-            height: 600px;
+            width: 280px;
+            height: 560px;
             background: rgba(255,255,255,0.1);
             border-radius: 30px;
             display: flex;
@@ -353,7 +355,10 @@
 
         <section class="phone-container">
             <div class="phone-screenshot">
-                <img src="screenshot.png" alt="AmbientWave app screenshot" onerror="this.parentElement.innerHTML='<div class=screenshot-placeholder>Add screenshot.png</div>';">
+                <img src="screenshot1.png" alt="AmbientWave environments tab with rain and nature sounds">
+            </div>
+            <div class="phone-screenshot">
+                <img src="screenshot2.png" alt="AmbientWave noises tab with white, brown, and pink noise">
             </div>
         </section>
 
